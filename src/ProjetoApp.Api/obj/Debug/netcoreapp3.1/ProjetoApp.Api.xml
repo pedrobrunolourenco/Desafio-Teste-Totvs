@@ -1,0 +1,252 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ProjetoApp.Api</name>
+    </assembly>
+    <members>
+        <member name="M:ProjetoApp.Api.Controllers.CandidatosController.ObterListaCandidatos">
+            <summary>
+            Retorna uma lista de candidatos
+            </summary>
+            <response code="200">Retorna uma lista de objetos de candidatos</response>   
+            <response code="401">Caso token de acesso seja inválido</response>
+        </member>
+        <member name="M:ProjetoApp.Api.Controllers.CandidatosController.ObterPoId(System.Int32)">
+            <summary>
+            Retorna um objeto candidato e recebe um Id
+            </summary>
+            <response code="200">Retorna um objeto candidato</response>   
+            <response code="401">Caso token de acesso seja inválido</response>
+        </member>
+        <member name="M:ProjetoApp.Api.Controllers.CandidatosController.AdicionarCandidato(ProjetoApp.Domain.Candidato.DTO.CandidatosInclusaoDTO)">
+            <summary>
+            Tenta INCLUIR uma vaga
+            </summary>
+            <response code="200">Retorna uma lista com erros da tentativa de inclusão do candidato, caso a lista esteja vazia  o candidato  foi incluído com sucesso</response>   
+            <response code="401">Caso token de acesso seja inválido</response>
+        </member>
+        <member name="M:ProjetoApp.Api.Controllers.CandidatosController.AlterarCandidato(ProjetoApp.Domain.Candidato.DTO.CandidatosAlteracaoDTO)">
+            <summary>
+            Tenta ALTERAR uma vaga
+            </summary>
+            <response code="200">Retorna uma lista com erros da tentativa de alteração do candidato, caso a lista esteja vazia o candidato  foi alerado com sucesso</response>   
+            <response code="401">Caso token de acesso seja inválido</response>
+        </member>
+        <member name="M:ProjetoApp.Api.Controllers.CandidatosController.ExcluirCandidato(System.Int32)">
+            <summary>
+            Tenta EXCLUIR uma vaga
+            </summary>
+            <response code="200">Retorna uma lista com erros da tentativa de exclusão do candidato, caso a lista esteja vazia  o candidato foi excluído com sucesso</response>   
+            <response code="401">Caso token de acesso seja inválido</response>
+        </member>
+        <member name="M:ProjetoApp.Api.Controllers.CandidaturasController.ObterCandidatosCadastrados">
+            <summary>
+            Retorna uma lista de candidaturas
+            </summary>
+            <response code="200">Retorna uma lista de objetos de candidaturas</response>   
+            <response code="401">Caso token de acesso seja inválido</response>
+        </member>
+        <member name="M:ProjetoApp.Api.Controllers.CandidaturasController.ObterPoId(System.Int32)">
+            <summary>
+            Retorna um objeto candidatura e recebe um Id
+            </summary>
+            <response code="200">Retorna um objeto candidatura</response>   
+            <response code="401">Caso token de acesso seja inválido</response>
+        </member>
+        <member name="M:ProjetoApp.Api.Controllers.CandidaturasController.AdicionarCandidatura(ProjetoApp.Domain.Candidatura.DTO.CandidaturasInclusaoDTO)">
+            <summary>
+            Tenta INCLUIR uma candidatura de um candidato a uma vaga
+            </summary>
+            <response code="200">Retorna uma lista com erros da tentativa de inclusão de uma candidatura, caso a lista esteja vazia a candidatura  foi incluído com sucesso</response>   
+            <response code="401">Caso token de acesso seja inválido</response>
+        </member>
+        <member name="M:ProjetoApp.Api.Controllers.CandidaturasController.ExcluirCandidatura(System.Int32)">
+            <summary>
+            Tenta EXCLUIR uma vaga
+            </summary>
+            <response code="200">Retorna uma lista com erros da tentativa de exclusão da candidatura, caso a lista esteja vazia a candidatura foi excluído com sucesso</response>   
+            <response code="401">Caso token de acesso seja inválido</response>
+        </member>
+        <member name="M:ProjetoApp.Api.Controllers.CurriculumController.ObterTodos">
+            <summary>
+            Retorna uma lista de curriculuns
+            </summary>
+            <response code="200">Retorna uma lista de objetos de curriculuns</response>   
+            <response code="401">Caso token de acesso seja inválido</response>
+        </member>
+        <member name="M:ProjetoApp.Api.Controllers.CurriculumController.ObterPoId(System.Int32)">
+            <summary>
+            Retorna um objeto curriculum e recebe um Id
+            </summary>
+            <response code="200">Retorna um objeto curriculum</response>   
+            <response code="401">Caso token de acesso seja inválido</response>
+        </member>
+        <member name="M:ProjetoApp.Api.Controllers.CurriculumController.Adicionar(ProjetoApp.Domain.Curriculums.DTO.CurriculumInclusaoDTO)">
+            <summary>
+            Tenta INCLUIR um curriculum
+            </summary>
+            <response code="200">Retorna uma lista com erros da tentativa de inclusão do curriculum, caso a lista esteja vazia o curriculum foi incluída com sucesso</response>   
+            <response code="401">Caso token de acesso seja inválido</response>
+        </member>
+        <member name="M:ProjetoApp.Api.Controllers.CurriculumController.Alterar(ProjetoApp.Domain.Curriculums.DTO.CurriculumAlteracaoDTO)">
+            <summary>
+            Tenta ALTERAR um curriulum
+            </summary>
+            <response code="200">Retorna uma lista com erros da tentativa de alteração do curriulum, caso a lista esteja vazia o curriculum foi alerado com sucesso</response>   
+            <response code="401">Caso token de acesso seja inválido</response>
+        </member>
+        <member name="M:ProjetoApp.Api.Controllers.CurriculumController.Excluir(System.Int32)">
+            <summary>
+            Tenta EXCLUIR um curriculum
+            </summary>
+            <response code="200">Retorna true se excluiu com sucesso </response>   
+            <response code="401">Caso token de acesso seja inválido</response>
+        </member>
+        <member name="M:ProjetoApp.Api.Controllers.CurriculumCursos.ObterTodos">
+            <summary>
+            Retorna uma lista de cursos
+            </summary>
+            <response code="200">Retorna uma lista de objetos de cursos</response>   
+            <response code="401">Caso token de acesso seja inválido</response>
+        </member>
+        <member name="M:ProjetoApp.Api.Controllers.CurriculumCursos.ObterPoId(System.Int32)">
+            <summary>
+            Retorna um objeto curso e recebe um Id
+            </summary>
+            <response code="200">Retorna um objeto curso</response>   
+            <response code="401">Caso token de acesso seja inválido</response>
+        </member>
+        <member name="M:ProjetoApp.Api.Controllers.CurriculumCursos.Adicionar(ProjetoApp.Domain.Curriculums.DTO.CursosInclusaoDTO)">
+            <summary>
+            Tenta INCLUIR um curso
+            </summary>
+            <response code="200">Retorna uma lista com erros da tentativa de inclusão do curso, caso a lista esteja vazia o curso foi incluído com sucesso</response>   
+            <response code="401">Caso token de acesso seja inválido</response>
+        </member>
+        <member name="M:ProjetoApp.Api.Controllers.CurriculumCursos.Alterar(ProjetoApp.Domain.Curriculums.DTO.CursosAlteracaoDTO)">
+            <summary>
+            Tenta ALTERAR um curso
+            </summary>
+            <response code="200">Retorna uma lista com erros da tentativa de alteração do curso, caso a lista esteja vazia o curso foi alerado com sucesso</response>   
+            <response code="401">Caso token de acesso seja inválido</response>
+        </member>
+        <member name="M:ProjetoApp.Api.Controllers.CurriculumCursos.Excluir(System.Int32)">
+            <summary>
+            Tenta EXCLUIR um curso
+            </summary>
+            <response code="200">Retorna uma lista com erros da tentativa de exclusão do curso, caso a lista esteja vazia o curso  foi excluído com sucesso</response>   
+            <response code="401">Caso token de acesso seja inválido</response>
+        </member>
+        <member name="M:ProjetoApp.Api.Controllers.CurriculumHistoricoProfissional.ObterTodos">
+            <summary>
+            Retorna uma lista de Histórico Profissional
+            </summary>
+            <response code="200">Retorna uma lista de objetos de  Histórico Profissional</response>   
+            <response code="401">Caso token de acesso seja inválido</response>
+        </member>
+        <member name="M:ProjetoApp.Api.Controllers.CurriculumHistoricoProfissional.ObterPoId(System.Int32)">
+            <summary>
+            Retorna um objeto  Histórico Profissional e recebe um Id
+            </summary>
+            <response code="200">Retorna um objeto  Histórico Profissional</response>   
+            <response code="401">Caso token de acesso seja inválido</response>
+        </member>
+        <member name="M:ProjetoApp.Api.Controllers.CurriculumHistoricoProfissional.Adicionar(ProjetoApp.Domain.Curriculums.DTO.HistoricoProfissionalInclusaoDTO)">
+            <summary>
+            Tenta INCLUIR um curso
+            </summary>
+            <response code="200">Retorna uma lista com erros da tentativa de inclusão do  Histórico Profissional, caso a lista esteja vazia o  Histórico Profissional foi incluído com sucesso</response>   
+            <response code="401">Caso token de acesso seja inválido</response>
+        </member>
+        <member name="M:ProjetoApp.Api.Controllers.CurriculumHistoricoProfissional.Alterar(ProjetoApp.Domain.Curriculums.DTO.HistoricoProfissionalAlteracaoDTO)">
+            <summary>
+            Tenta ALTERAR um Historico Profissional
+            </summary>
+            <response code="200">Retorna uma lista com erros da tentativa de alteração do  Histórico Profissional, caso a lista esteja vazia o  Histórico Profissional foi alerado com sucesso</response>   
+            <response code="401">Caso token de acesso seja inválido</response>
+        </member>
+        <member name="M:ProjetoApp.Api.Controllers.CurriculumHistoricoProfissional.Excluir(System.Int32)">
+            <summary>
+            Tenta EXCLUIR um curso
+            </summary>
+            <response code="200">Retorna uma lista com erros da tentativa de exclusão do  Histórico Profissional, caso a lista esteja vazia o  Histórico Profissional  foi excluído com sucesso</response>   
+            <response code="401">Caso token de acesso seja inválido</response>
+        </member>
+        <member name="M:ProjetoApp.Api.Controllers.CurriculumIdiomasController.ObterTodos">
+            <summary>
+            Retorna uma lista de Idiomas
+            </summary>
+            <response code="200">Retorna uma lista de objetos de Idiomas</response>   
+            <response code="401">Caso token de acesso seja inválido</response>
+        </member>
+        <member name="M:ProjetoApp.Api.Controllers.CurriculumIdiomasController.ObterPoId(System.Int32)">
+            <summary>
+            Retorna um objeto Idiomas e recebe um Id
+            </summary>
+            <response code="200">Retorna um objeto Idiomas</response>   
+            <response code="401">Caso token de acesso seja inválido</response>
+        </member>
+        <member name="M:ProjetoApp.Api.Controllers.CurriculumIdiomasController.Adicionar(ProjetoApp.Domain.Curriculums.DTO.IndiomasInclusaoDTO)">
+            <summary>
+            Tenta INCLUIR um Idioma
+            </summary>
+            <response code="200">Retorna uma lista com erros da tentativa de inclusão de Idiomas, caso a lista esteja vazia o Idioma foi incluído com sucesso</response>   
+            <response code="401">Caso token de acesso seja inválido</response>
+        </member>
+        <member name="M:ProjetoApp.Api.Controllers.CurriculumIdiomasController.Alterar(ProjetoApp.Domain.Curriculums.DTO.IdiomasAlteracaoDTO)">
+            <summary>
+            Tenta ALTERAR um Idioma
+            </summary>
+            <response code="200">Retorna uma lista com erros da tentativa de alteração do idioma, caso a lista esteja vazia o idioma foi alerado com sucesso</response>   
+            <response code="401">Caso token de acesso seja inválido</response>
+        </member>
+        <member name="M:ProjetoApp.Api.Controllers.CurriculumIdiomasController.Excluir(System.Int32)">
+            <summary>
+            Tenta EXCLUIR um idioma
+            </summary>
+            <response code="200">Retorna uma lista com erros da tentativa de exclusão do idioma, caso a lista esteja vazia o  idioma  foi excluído com sucesso</response>   
+            <response code="401">Caso token de acesso seja inválido</response>
+        </member>
+        <member name="M:ProjetoApp.Api.Controllers.SegurancaController.GeraToken(ProjetoApp.Domain.Vaga.DTO.LoginDTO)">
+            <summary>
+            Gera Token
+            </summary>
+            <response code="200">Gera um token válido caso a chave passada seja correta ou a mensagem Erro caso a chave seja incorreta</response>   
+        </member>
+        <member name="M:ProjetoApp.Api.Controllers.VagasController.ObterListaVagas">
+            <summary>
+            Retorna uma lista de vagas
+            </summary>
+            <response code="200">Retorna uma lista de objetos de vagas</response>   
+            <response code="401">Caso token de acesso seja inválido</response>
+        </member>
+        <member name="M:ProjetoApp.Api.Controllers.VagasController.ObterPoId(System.Int32)">
+            <summary>
+            Retorna um objeto vaga e recebe um Id
+            </summary>
+            <response code="200">Retorna um objeto vaga</response>   
+            <response code="401">Caso token de acesso seja inválido</response>
+        </member>
+        <member name="M:ProjetoApp.Api.Controllers.VagasController.AdicionarVaga(ProjetoApp.Domain.Vaga.DTO.VagasInclusaoDTO)">
+            <summary>
+            Tenta INCLUIR uma vaga
+            </summary>
+            <response code="200">Retorna uma lista com erros da tentativa de inclusão da vaga, caso a lista esteja vazia  a vaga  foi incluída com sucesso</response>   
+            <response code="401">Caso token de acesso seja inválido</response>
+        </member>
+        <member name="M:ProjetoApp.Api.Controllers.VagasController.AlterarVaga(ProjetoApp.Domain.Vaga.DTO.VagasAlteracaoDTO)">
+            <summary>
+            Tenta ALTERAR uma vaga
+            </summary>
+            <response code="200">Retorna uma lista com erros da tentativa de alteração da vaga, caso a lista esteja vazia  a vaga  foi alerada com sucesso</response>   
+            <response code="401">Caso token de acesso seja inválido</response>
+        </member>
+        <member name="M:ProjetoApp.Api.Controllers.VagasController.ExcluirVaga(System.Int32)">
+            <summary>
+            Tenta EXCLUIR uma vaga
+            </summary>
+            <response code="200">Retorna uma lista com erros da tentativa de exclusão da vaga, caso a lista esteja vazia  a vaga  foi excluída com sucesso</response>   
+            <response code="401">Caso token de acesso seja inválido</response>
+        </member>
+    </members>
+</doc>

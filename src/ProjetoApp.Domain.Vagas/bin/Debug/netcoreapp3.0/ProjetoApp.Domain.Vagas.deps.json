@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "ProjetoApp.Domain.Vagas/1.0.0": {
+        "dependencies": {
+          "ProjetoApp.Domain.Shared": "1.0.0"
+        },
+        "runtime": {
+          "ProjetoApp.Domain.Vagas.dll": {}
+        }
+      },
+      "ProjetoApp.Domain.Shared/1.0.0": {
+        "runtime": {
+          "ProjetoApp.Domain.Shared.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ProjetoApp.Domain.Vagas/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ProjetoApp.Domain.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

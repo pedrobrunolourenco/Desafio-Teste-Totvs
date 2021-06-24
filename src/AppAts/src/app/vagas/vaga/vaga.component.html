@@ -1,0 +1,135 @@
+<mat-toolbar>
+    <span *ngIf="this.acao == 'A'">Alteração de Vaga</span>
+    <span *ngIf="this.acao == 'I'">Inclusão de Vaga</span>
+    <span class="fill-remaining-space"></span>
+    <button class="btn-dialog-close" mat-strocked-button (click)="onClose()" tabindex="-1">
+        <mat-icon>clear</mat-icon>
+    </button>
+</mat-toolbar>
+
+<form [formGroup]="this.service.formulario" class="normal-form" (submit)="onSubmit()">
+
+    <mat-grid-list cols="2" rowHeight="550px">
+
+        <mat-grid-tile>
+            <div class="controles-container">
+                <input type="hidden" formControlName="Id">
+
+
+                <mat-form-field>
+                    <input formControlName="EmpresaContratante" matInput placeholder="Empresa Contratante"
+                        autocomplete="off" maxlength="100">
+                    <mat-error *ngIf="this.service.formulario.controls['EmpresaContratante'].errors?.required">Informe o
+                        nome
+                        da empresa contratante.</mat-error>
+                    <mat-error *ngIf="this.service.formulario.controls['EmpresaContratante'].errors?.maxlength">Mínimo
+                        de 100
+                        caracteres.</mat-error>
+                </mat-form-field>
+
+                <mat-form-field>
+                    <input formControlName="Locacao" matInput placeholder="Endereço de Locação" autocomplete="off"
+                        maxlength="100">
+                    <mat-error *ngIf="this.service.formulario.controls['Locacao'].errors?.required">Informe o endereço
+                        da locação da vaga.</mat-error>
+                    <mat-error *ngIf="this.service.formulario.controls['Locacao'].errors?.maxlength">Mínimo de 100
+                        caracteres.</mat-error>
+                </mat-form-field>
+
+
+                <mat-form-field>
+                    <input formControlName="Cargo" matInput placeholder="Atividade que será exercida" autocomplete="off"
+                        maxlength="100">
+                    <mat-error *ngIf="this.service.formulario.controls['Cargo'].errors?.required">Informe a atividade
+                        que será exercida.</mat-error>
+                    <mat-error *ngIf="this.service.formulario.controls['Cargo'].errors?.maxlength">Mínimo de 100
+                        caracteres.</mat-error>
+                </mat-form-field>
+
+                <mat-form-field>
+                    <input formControlName="DataAbertura" matInput [matDatepicker]="dp" matInput
+                        placeholder="Data De Abertura do Processo" autocomplete="off" maxlength="10">
+                    <mat-datepicker-toggle matSuffix [for]="dp"></mat-datepicker-toggle>
+                    <mat-datepicker #dp></mat-datepicker>
+                    <mat-error *ngIf="this.service.formulario.controls['DataAbertura'].errors?.required">Informe a data
+                        de
+                        abertura do processo.</mat-error>
+                </mat-form-field>
+
+                <mat-form-field>
+                    <textarea class="descricao-vaga" formControlName="DescricaoVaga" matInput placeholder="Descrição da Vaga"
+                        autocomplete="off" maxlength="4000">
+                    </textarea>
+                    <mat-error *ngIf="this.service.formulario.controls['DescricaoVaga'].errors?.required">Informe um
+                        resumo
+                        descritivo da vaga.</mat-error>
+                    <mat-error *ngIf="this.service.formulario.controls['DescricaoVaga'].errors?.minlength">Mínimo de 30
+                        caracteres.</mat-error>
+                    <mat-error *ngIf="this.service.formulario.controls['DescricaoVaga'].errors?.maxlength">Mínimo de
+                        4000
+                        caracteres.</mat-error>
+                </mat-form-field>
+
+
+            </div>
+        </mat-grid-tile>
+
+
+
+        <mat-grid-tile>
+            <div class="controles-container">
+
+                <div class="add-bottom-padding">
+                    <mat-radio-group formControlName="Status">
+                        <mat-radio-button value="A">Aberta</mat-radio-button>
+                        <mat-radio-button value="F">Fechada</mat-radio-button>
+                    </mat-radio-group>
+                </div>
+
+
+                <div class="add-bottom-padding">
+                    <mat-checkbox formControlName="Graduacao">Exige curso superior completo ?</mat-checkbox>
+                </div>
+
+                <div class="add-bottom-padding">
+                    <mat-checkbox formControlName="InglesFluente">Exige fluência em inglês ?</mat-checkbox>
+                </div>
+
+                <div class="add-bottom-padding">
+                    <mat-radio-group formControlName="Genero">
+                        <mat-radio-button value="M">Masculino</mat-radio-button>
+                        <mat-radio-button value="F">Feminino</mat-radio-button>
+                        <mat-radio-button value="I">Indefinido</mat-radio-button>
+                    </mat-radio-group>
+                </div>
+
+
+
+                <mat-form-field>
+                    <input id="valorFormatado" (keypress)="js.moeda('.', ',', $event)" formControlName="Salario"
+                        matInput placeholder="Salário informado" autocomplete="off" maxlength="15">
+                </mat-form-field>
+
+                <mat-form-field>
+                    <input formControlName="Observacao" matInput placeholder="Observações" autocomplete="off"
+                        maxlength="200">
+                    <mat-error *ngIf="this.service.formulario.controls['Observacao'].errors?.maxlength">Mínimo de 200
+                        caracteres.</mat-error>
+                </mat-form-field>
+
+
+                <div class="button-row">
+                    <button mat-raised-button color="primary" type="submit"
+                        [disabled]="this.service.formulario.invalid && this.acao=='I'">Gravar</button>
+                    <button mat-raised-button color="warn" (click)="onClear()">Limpar</button>
+                </div>
+
+
+
+            </div>
+        </mat-grid-tile>
+
+
+    </mat-grid-list>
+
+</form>

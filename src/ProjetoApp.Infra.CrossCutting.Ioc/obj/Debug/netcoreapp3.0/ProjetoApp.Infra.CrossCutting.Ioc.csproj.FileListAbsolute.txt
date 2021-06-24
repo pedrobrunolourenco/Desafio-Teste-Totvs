@@ -1,0 +1,16 @@
+C:\ATS\ProjetoAts\src\ProjetoApp.Infra.CrossCutting.Ioc\bin\Debug\netcoreapp3.0\ProjetoApp.Infra.CrossCutting.Ioc.deps.json
+C:\ATS\ProjetoAts\src\ProjetoApp.Infra.CrossCutting.Ioc\bin\Debug\netcoreapp3.0\ProjetoApp.Infra.CrossCutting.Ioc.dll
+C:\ATS\ProjetoAts\src\ProjetoApp.Infra.CrossCutting.Ioc\bin\Debug\netcoreapp3.0\ProjetoApp.Infra.CrossCutting.Ioc.pdb
+C:\ATS\ProjetoAts\src\ProjetoApp.Infra.CrossCutting.Ioc\bin\Debug\netcoreapp3.0\ProjetoApp.Domain.dll
+C:\ATS\ProjetoAts\src\ProjetoApp.Infra.CrossCutting.Ioc\bin\Debug\netcoreapp3.0\ProjetoApp.Domain.Shared.dll
+C:\ATS\ProjetoAts\src\ProjetoApp.Infra.CrossCutting.Ioc\bin\Debug\netcoreapp3.0\ProjetoApp.Infra.Data.dll
+C:\ATS\ProjetoAts\src\ProjetoApp.Infra.CrossCutting.Ioc\bin\Debug\netcoreapp3.0\ProjetoApp.Domain.Shared.pdb
+C:\ATS\ProjetoAts\src\ProjetoApp.Infra.CrossCutting.Ioc\bin\Debug\netcoreapp3.0\ProjetoApp.Domain.pdb
+C:\ATS\ProjetoAts\src\ProjetoApp.Infra.CrossCutting.Ioc\bin\Debug\netcoreapp3.0\ProjetoApp.Infra.Data.pdb
+C:\ATS\ProjetoAts\src\ProjetoApp.Infra.CrossCutting.Ioc\obj\Debug\netcoreapp3.0\ProjetoApp.Infra.CrossCutting.Ioc.csprojAssemblyReference.cache
+C:\ATS\ProjetoAts\src\ProjetoApp.Infra.CrossCutting.Ioc\obj\Debug\netcoreapp3.0\ProjetoApp.Infra.CrossCutting.Ioc.AssemblyInfoInputs.cache
+C:\ATS\ProjetoAts\src\ProjetoApp.Infra.CrossCutting.Ioc\obj\Debug\netcoreapp3.0\ProjetoApp.Infra.CrossCutting.Ioc.AssemblyInfo.cs
+C:\ATS\ProjetoAts\src\ProjetoApp.Infra.CrossCutting.Ioc\obj\Debug\netcoreapp3.0\ProjetoApp.Infra.CrossCutting.Ioc.csproj.CoreCompileInputs.cache
+C:\ATS\ProjetoAts\src\ProjetoApp.Infra.CrossCutting.Ioc\obj\Debug\netcoreapp3.0\ProjetoApp.Infra.CrossCutting.Ioc.csproj.CopyComplete
+C:\ATS\ProjetoAts\src\ProjetoApp.Infra.CrossCutting.Ioc\obj\Debug\netcoreapp3.0\ProjetoApp.Infra.CrossCutting.Ioc.dll
+C:\ATS\ProjetoAts\src\ProjetoApp.Infra.CrossCutting.Ioc\obj\Debug\netcoreapp3.0\ProjetoApp.Infra.CrossCutting.Ioc.pdb

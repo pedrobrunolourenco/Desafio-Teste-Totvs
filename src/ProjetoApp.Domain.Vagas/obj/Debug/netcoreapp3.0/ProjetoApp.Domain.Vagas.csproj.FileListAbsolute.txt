@@ -1,0 +1,12 @@
+C:\ATS\ProjetoAts\src\ProjetoApp.Domain.Vagas\bin\Debug\netcoreapp3.0\ProjetoApp.Domain.Vagas.deps.json
+C:\ATS\ProjetoAts\src\ProjetoApp.Domain.Vagas\bin\Debug\netcoreapp3.0\ProjetoApp.Domain.Vagas.dll
+C:\ATS\ProjetoAts\src\ProjetoApp.Domain.Vagas\bin\Debug\netcoreapp3.0\ProjetoApp.Domain.Vagas.pdb
+C:\ATS\ProjetoAts\src\ProjetoApp.Domain.Vagas\obj\Debug\netcoreapp3.0\ProjetoApp.Domain.Vagas.csprojAssemblyReference.cache
+C:\ATS\ProjetoAts\src\ProjetoApp.Domain.Vagas\obj\Debug\netcoreapp3.0\ProjetoApp.Domain.Vagas.AssemblyInfoInputs.cache
+C:\ATS\ProjetoAts\src\ProjetoApp.Domain.Vagas\obj\Debug\netcoreapp3.0\ProjetoApp.Domain.Vagas.AssemblyInfo.cs
+C:\ATS\ProjetoAts\src\ProjetoApp.Domain.Vagas\obj\Debug\netcoreapp3.0\ProjetoApp.Domain.Vagas.csproj.CoreCompileInputs.cache
+C:\ATS\ProjetoAts\src\ProjetoApp.Domain.Vagas\obj\Debug\netcoreapp3.0\ProjetoApp.Domain.Vagas.dll
+C:\ATS\ProjetoAts\src\ProjetoApp.Domain.Vagas\obj\Debug\netcoreapp3.0\ProjetoApp.Domain.Vagas.pdb
+C:\ATS\ProjetoAts\src\ProjetoApp.Domain.Vagas\bin\Debug\netcoreapp3.0\ProjetoApp.Domain.Shared.dll
+C:\ATS\ProjetoAts\src\ProjetoApp.Domain.Vagas\bin\Debug\netcoreapp3.0\ProjetoApp.Domain.Shared.pdb
+C:\ATS\ProjetoAts\src\ProjetoApp.Domain.Vagas\obj\Debug\netcoreapp3.0\ProjetoApp.Domain.Vagas.csproj.CopyComplete

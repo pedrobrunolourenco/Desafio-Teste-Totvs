@@ -1,0 +1,76 @@
+<div class="search-div">
+    <button mat-raised-button (click)="onCreate()">
+        <mat-icon>add</mat-icon>Nova Vaga
+    </button>
+    <mat-form-field class="search-form-field" floatLabel="never">
+        <input matInput [(ngModel)]="searchKey" placeholder="Pesquisar" autocomplete="off" (keyup)="applyFilter()">
+        <button mat-button matSuffix mat-icon-button aria-label="Clear" *ngIf="searchKey" (click)="onPesquisaClear()">
+            <mat-icon>close</mat-icon>
+        </button>
+    </mat-form-field>
+
+</div>
+
+<div class="mat-elevation-z8">
+
+    <mat-table [dataSource]="listaData" matSort>
+        
+        <ng-container matColumnDef="posicao">
+            <mat-header-cell *matHeaderCellDef mat-sort-header>Status</mat-header-cell>
+            <mat-cell *matCellDef="let element">{{element.posicao}}</mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="dataAbertura">
+            <mat-header-cell *matHeaderCellDef mat-sort-header>Abertura</mat-header-cell>
+            <mat-cell *matCellDef="let element">{{element.dataAbertura | date: 'dd/MM/yyyy'}}</mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="empresaContratante">
+            <mat-header-cell *matHeaderCellDef mat-sort-header>Empresa Contratante</mat-header-cell>
+            <mat-cell *matCellDef="let element">{{element.empresaContratante}}</mat-cell>
+        </ng-container>
+
+
+        <ng-container matColumnDef="cargo">
+            <mat-header-cell *matHeaderCellDef mat-sort-header>Cargo</mat-header-cell>
+            <mat-cell *matCellDef="let element">{{element.cargo}}</mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="salario">
+            <mat-header-cell *matHeaderCellDef mat-sort-header>Remuneração</mat-header-cell>
+            <mat-cell *matCellDef="let element">{{element.salario | currency: 'BRL'}}</mat-cell>
+        </ng-container>
+
+
+        <ng-container matColumnDef="options">
+            <mat-header-cell *matHeaderCellDef></mat-header-cell>
+            <mat-cell *matCellDef="let row">
+                <button mat-icon-button (click)="onEdit(row.id)">
+                    <mat-icon>launch</mat-icon>
+                </button>
+                <button mat-icon-button color="warn" (click)="onDelete(row.id)">
+                    <mat-icon>delete_outline</mat-icon>
+                </button>
+            </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="carga">
+            <mat-footer-cell *matFooterCellDef colspan="6">Carregando dados...</mat-footer-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="nodados">
+            <mat-footer-cell *matFooterCellDef colspan="6">Não há registros...</mat-footer-cell>
+        </ng-container>
+
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+        <mat-footer-row *matFooterRowDef="['carga']" [ngClass]="{'hide' : listaData != null}"></mat-footer-row>
+        <mat-footer-row *matFooterRowDef="['nodados']"
+            [ngClass]="{'hide' : !(listaData!=null && listaData.data.length==0)}"></mat-footer-row>
+
+
+    </mat-table>
+
+    <mat-paginator [pageSizeOptions]="[5,10,25,100]" [pageSize]="5" showFirstLastButtons></mat-paginator>
+
+</div>

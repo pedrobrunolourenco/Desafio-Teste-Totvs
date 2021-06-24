@@ -1,0 +1,136 @@
+CREATE TABLE [dbo].[Vagas](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[EmpresaContratante] [varchar](100) NULL,
+	[Locacao] [varchar](100) NULL,
+	[DataAbertura] [datetime] NULL,
+	[Status] [varchar](1) NULL,
+	[Cargo] [varchar](100) NULL,
+	[DescricaoVaga] [varchar](200) NULL,
+	[InglesFluente] [bit] NULL,
+	[Graduacao] [bit] NULL,
+	[Genero] [varchar](1) NULL,
+	[Observacao] [varchar](200) NULL,
+	[Salario] [decimal](18, 2) NULL,
+ CONSTRAINT [PK_Vagas] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[Candidatos](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Nome] [varchar](100) NULL,
+	[Cpf] [varchar](11) NULL,
+	[DataNascimento] [datetime] NULL,
+	[EstadoCivil] [varchar](1) NULL,
+	[Genero] [varchar](1) NULL,
+	[Telefone] [varchar](12) NULL,
+	[EnderecoEmail] [varchar](200) NULL,
+	[Logradouro] [varchar](200) NULL,
+	[Bairro] [varchar](50) NULL,
+	[Cidade] [varchar](50) NULL,
+	[Uf] [varchar](2) NULL,
+	[Cep] [varchar](8) NULL,
+	[Profissao] [varchar](100) NULL,
+	[Formacao] [varchar](100) NULL,
+	[NivelFormacao] [varchar](100) NULL,
+	[Instituicao] [varchar](100) NULL,
+ CONSTRAINT [PK_Candidatos] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[Candidaturas](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[IdCandidato] [int] NULL,
+	[IdVaga] [int] NULL,
+ CONSTRAINT [PK_Candidaturas] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[Candidaturas]  WITH CHECK ADD FOREIGN KEY([IdCandidato])
+REFERENCES [dbo].[Candidatos] ([Id])
+GO
+
+ALTER TABLE [dbo].[Candidaturas]  WITH CHECK ADD FOREIGN KEY([IdVaga])
+REFERENCES [dbo].[Vagas] ([Id])
+GO
+
+CREATE TABLE [dbo].[Curriculum](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[IdCandidato] [int] NULL,
+	[AreaAtuacao] [varchar](8000) NULL,
+	[Objetivo] [varchar](8000) NULL,
+ CONSTRAINT [PK_Curriculum] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[Curriculum]  WITH CHECK ADD FOREIGN KEY([IdCandidato])
+REFERENCES [dbo].[Curriculum] ([Id])
+GO
+
+CREATE TABLE [dbo].[HistoricoProfissional](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[IdCur] [int] NULL,
+	[DtInicio] [datetime] NULL,
+	[DtFim] [datetime] NULL,
+	[AtividadeExercida] [varchar](8000) NULL,
+ CONSTRAINT [PK_HistoricoProfissional] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[HistoricoProfissional]  WITH CHECK ADD FOREIGN KEY([IdCur])
+REFERENCES [dbo].[Curriculum] ([Id])
+GO
+
+CREATE TABLE [dbo].[Cursos](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[IdCur] [int] NULL,
+	[DtInicio] [datetime] NULL,
+	[DtFim] [datetime] NULL,
+	[NomeCurso] [varchar](200) NULL,
+	[Instituicao] [varchar](200) NULL,
+ CONSTRAINT [PK_Cursos] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[Cursos]  WITH CHECK ADD FOREIGN KEY([IdCur])
+REFERENCES [dbo].[Curriculum] ([Id])
+GO
+
+CREATE TABLE [dbo].[Idiomas](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[IdCur] [int] NULL,
+	[Idioma] [varchar](50) NULL,
+	[Nivel] [varchar](1) NULL,
+ CONSTRAINT [PK_Idiomas] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[Idiomas]  WITH CHECK ADD FOREIGN KEY([IdCur])
+REFERENCES [dbo].[Curriculum] ([Id])
+GO
+
+
+
+
+
+

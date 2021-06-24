@@ -1,0 +1,17 @@
+C:\ATS\ProjetoAts\src\ProjetoApp.Infra.Data\bin\Debug\netcoreapp3.0\ProjetoApp.Infra.Data.deps.json
+C:\ATS\ProjetoAts\src\ProjetoApp.Infra.Data\bin\Debug\netcoreapp3.0\ProjetoApp.Infra.Data.runtimeconfig.json
+C:\ATS\ProjetoAts\src\ProjetoApp.Infra.Data\bin\Debug\netcoreapp3.0\ProjetoApp.Infra.Data.runtimeconfig.dev.json
+C:\ATS\ProjetoAts\src\ProjetoApp.Infra.Data\bin\Debug\netcoreapp3.0\ProjetoApp.Infra.Data.dll
+C:\ATS\ProjetoAts\src\ProjetoApp.Infra.Data\bin\Debug\netcoreapp3.0\ProjetoApp.Infra.Data.pdb
+C:\ATS\ProjetoAts\src\ProjetoApp.Infra.Data\bin\Debug\netcoreapp3.0\ProjetoApp.Domain.dll
+C:\ATS\ProjetoAts\src\ProjetoApp.Infra.Data\bin\Debug\netcoreapp3.0\ProjetoApp.Domain.Shared.dll
+C:\ATS\ProjetoAts\src\ProjetoApp.Infra.Data\bin\Debug\netcoreapp3.0\ProjetoApp.Domain.Shared.pdb
+C:\ATS\ProjetoAts\src\ProjetoApp.Infra.Data\bin\Debug\netcoreapp3.0\ProjetoApp.Domain.pdb
+C:\ATS\ProjetoAts\src\ProjetoApp.Infra.Data\obj\Debug\netcoreapp3.0\ProjetoApp.Infra.Data.csprojAssemblyReference.cache
+C:\ATS\ProjetoAts\src\ProjetoApp.Infra.Data\obj\Debug\netcoreapp3.0\ProjetoApp.Infra.Data.AssemblyInfoInputs.cache
+C:\ATS\ProjetoAts\src\ProjetoApp.Infra.Data\obj\Debug\netcoreapp3.0\ProjetoApp.Infra.Data.AssemblyInfo.cs
+C:\ATS\ProjetoAts\src\ProjetoApp.Infra.Data\obj\Debug\netcoreapp3.0\ProjetoApp.Infra.Data.csproj.CoreCompileInputs.cache
+C:\ATS\ProjetoAts\src\ProjetoApp.Infra.Data\obj\Debug\netcoreapp3.0\ProjetoApp.Infra.Data.csproj.CopyComplete
+C:\ATS\ProjetoAts\src\ProjetoApp.Infra.Data\obj\Debug\netcoreapp3.0\ProjetoApp.Infra.Data.dll
+C:\ATS\ProjetoAts\src\ProjetoApp.Infra.Data\obj\Debug\netcoreapp3.0\ProjetoApp.Infra.Data.pdb
+C:\ATS\ProjetoAts\src\ProjetoApp.Infra.Data\obj\Debug\netcoreapp3.0\ProjetoApp.Infra.Data.genruntimeconfig.cache

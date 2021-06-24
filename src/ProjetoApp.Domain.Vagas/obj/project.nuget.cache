@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "3G6kqovQvF+Vb141ictzqpwccsC2Z/xQWyt56JoCdS05ojscS9FBnLUbsrWQ0/ecW+MtfoxY2ZsPjFqFgkQtYw==",
+  "success": true,
+  "projectFilePath": "C:\\ATS\\ProjetoAts\\src\\ProjetoApp.Domain.Vagas\\ProjetoApp.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\pedro\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

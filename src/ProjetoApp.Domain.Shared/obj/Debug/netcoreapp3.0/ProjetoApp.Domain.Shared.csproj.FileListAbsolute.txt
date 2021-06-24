@@ -1,0 +1,8 @@
+C:\ATS\ProjetoAts\src\ProjetoApp.Domain.Shared\bin\Debug\netcoreapp3.0\ProjetoApp.Domain.Shared.deps.json
+C:\ATS\ProjetoAts\src\ProjetoApp.Domain.Shared\bin\Debug\netcoreapp3.0\ProjetoApp.Domain.Shared.dll
+C:\ATS\ProjetoAts\src\ProjetoApp.Domain.Shared\bin\Debug\netcoreapp3.0\ProjetoApp.Domain.Shared.pdb
+C:\ATS\ProjetoAts\src\ProjetoApp.Domain.Shared\obj\Debug\netcoreapp3.0\ProjetoApp.Domain.Shared.AssemblyInfoInputs.cache
+C:\ATS\ProjetoAts\src\ProjetoApp.Domain.Shared\obj\Debug\netcoreapp3.0\ProjetoApp.Domain.Shared.AssemblyInfo.cs
+C:\ATS\ProjetoAts\src\ProjetoApp.Domain.Shared\obj\Debug\netcoreapp3.0\ProjetoApp.Domain.Shared.csproj.CoreCompileInputs.cache
+C:\ATS\ProjetoAts\src\ProjetoApp.Domain.Shared\obj\Debug\netcoreapp3.0\ProjetoApp.Domain.Shared.dll
+C:\ATS\ProjetoAts\src\ProjetoApp.Domain.Shared\obj\Debug\netcoreapp3.0\ProjetoApp.Domain.Shared.pdb
