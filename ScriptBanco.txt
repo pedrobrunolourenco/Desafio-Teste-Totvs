@@ -129,9 +129,6 @@ ALTER TABLE [dbo].[Idiomas]  WITH CHECK ADD FOREIGN KEY([IdCur])
 REFERENCES [dbo].[Curriculum] ([Id])
 GO
 
--- teste para ver no git-hub
-
-
 
 
 
